@@ -42,7 +42,7 @@ When the local development URL is structured in this way, the plugin can automat
 
 ## My Local Dev Environment
 
-As long as your local development URL is setup as discussed above, you're good. --
+As long as your local development URL is setup as discussed above, you're good. &mdash;
 
 But if you're curious, I use [Laravel Valet](https://laravel.com/docs/valet). I run the `valet park` command in the `/Sites` directory on my Mac to serve all development sites. When doing this with Valet, it creates simple environment where each directory within is served as `{directory-name}.dev`.
 
