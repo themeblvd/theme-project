@@ -18,8 +18,8 @@ Well, when developing a theme locally, my current project structure extends that
 * `/wp-content`
 	* `/{name}-project`
 		* `/dist`
-			* `/{name}`
-			* `name-x.x.x.zip`
+			* `/{name}` -- Compiled theme that's currently "active" with WordPress.
+			* `name-x.x.x.zip` -- Final published installable WordPress theme.
 		* `/lib`
 		* `/src`
 		* `gulpfile.js`
