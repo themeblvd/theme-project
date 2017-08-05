@@ -1,10 +1,12 @@
 # "Theme Project" WordPress Plugin
 
-This is a WordPress plugin for my local development to help support a more automated workflow for theme development. This plugin is used in local WordPress theme projects where I use Node.js and Gulp.
+This is a WordPress plugin for my local development to help support a more automated workflow for theme development. This plugin is used in local WordPress theme projects where I use Node.js and Gulp, and is activated on each theme's WordPress development site.
 
 Below, I'll explain how this plugin fits into my overall theme development workflow, but really this is just a simple plugin showing the usefulness of WordPress's [register_theme_directory()](https://codex.wordpress.org/Function_Reference/register_theme_directory), beyond what it was probably originally intended for. Feel free to take this simple plugin and modify it for your own development workflows.
 
 ## Project Structure
+
+Before discussing what this little plugin actually does, let's first go over how my local theme development projects are structured.
 
 We all know the basic structure of WordPress:
 
