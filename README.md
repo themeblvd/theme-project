@@ -15,7 +15,7 @@ We all know the basic structure of WordPress:
 	* `/themes`
 	* `/uploads`
 
-Well, when developing a theme locally, my current project structure extends that by adding a `{name}-project` to the `/wp-content` directory of WordPress to hold my theme project.
+Well, when developing a theme locally, my current project structure extends that by adding a `{name}-project` to the `/wp-content` directory of WordPress to hold my theme project:
 
 * `/wp-content`
 	* `/{name}-project`
@@ -34,19 +34,19 @@ Well, when developing a theme locally, my current project structure extends that
 
 This plugin simply registers a new theme directory with WordPress located at `/wp-content/{name}-project/dist`, allowing for the "active" theme of the local WordPress site to be `/wp-content/{name}-project/dist/{name}`.
 
-## Requirements
+### Requirements
 
 In order for this plugin to determine the template parameter, the development URL must be structured a certain way:
 
  	http://{localhost URL}/themes/{name}/
 
-When the local development URL is structured in this way, the plugin can automatically pick up the `{name}` attribute needed for the project structure.
+When the local development URL is structured in this way, the plugin can automatically pick up the `{name}` attribute needed for the project structure. But of course, you could easily modify this plugin to support a different system. My main goal here was to be able to copy the exact same plugin to each development site, without having to configure anything specific to each project.
 
 ## My Local Dev Environment
 
 As long as your local development URL is setup as discussed above, you're good. &mdash;
 
-But if you're curious, I use [Laravel Valet](https://laravel.com/docs/valet). I run the `valet park` command in the `/Sites` directory on my Mac to serve all development sites. When doing this with Valet, it creates simple environment where each directory within is served as `{directory-name}.dev`.
+But if you're curious, I use [Laravel Valet](https://laravel.com/docs/valet). I run the `valet park` command in the `/Sites` directory on my Mac to serve all development sites. When doing this, Valet creates a simple environment where each directory within is served as `{directory-name}.dev`.
 
 So for example, I have a separate local site for each theme project. They're all located here on my Mac:
 
@@ -61,8 +61,8 @@ So for example, I have a separate local site for each theme project. They're all
 
 And so I can access each site in my browser at the URLs:
 
-	* `http://wordpress.dev/themes/theme-1`
-	* `http://wordpress.dev/themes/theme-2`
-	* `http://wordpress.dev/themes/theme-3`
-	* `http://wordpress.dev/themes/theme-4`
-	* etc ...
+* `http://wordpress.dev/themes/theme-1`
+* `http://wordpress.dev/themes/theme-2`
+* `http://wordpress.dev/themes/theme-3`
+* `http://wordpress.dev/themes/theme-4`
+* etc ...
